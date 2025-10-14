@@ -48,7 +48,7 @@ If you discover a security vulnerability, please report it responsibly:
 - Disclose the vulnerability publicly
 
 ### DO
-- Email: security@connectkreations.com
+- Email: connectkreations@gmail.com
 - Include detailed steps to reproduce
 - Allow 48 hours for initial response
 - Wait for fix before public disclosure

@@ -160,13 +160,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🔐 Security
 
 Found a security issue? Please report it responsibly:
-- Email: security@connectkreations.com
+- Email: connectkreations@gmail.com
 - See [SECURITY.md](SECURITY.md) for details
 
 ## 📞 Support
 
 - 🌐 Website: [ideaota.com](https://ideaota.com)
-- 📧 Email: contact@connectkreations.com
+- 📧 Email: connectkreations@gmail.com
 - 💬 Issues: [GitHub Issues](https://github.com/connectkreations/ideaota-tools/issues)
 
 ## 🌟 Acknowledgments

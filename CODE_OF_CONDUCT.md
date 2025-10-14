@@ -22,7 +22,7 @@ We pledge to make participation in our project a harassment-free experience for 
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to:
-- Email: conduct@connectkreations.com
+- Email: connectkreations@gmail.com
 
 All complaints will be reviewed and investigated promptly and fairly.
 

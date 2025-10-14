@@ -91,6 +91,6 @@ Types:
 ## 📞 Questions?
 
 - Open a Discussion on GitHub
-- Email: contact@connectkreations.com
+- Email: connectkreations@gmail.com
 
 Thank you for contributing! 🚀
