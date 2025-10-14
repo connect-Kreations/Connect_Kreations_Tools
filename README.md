@@ -187,7 +187,7 @@ Found a security issue? Please report it responsibly:
 
 <div align="center">
 
-**[Website](https://tools.ideaota.com)** • **[Documentation](README.md)** • **[Contributing](CONTRIBUTING.md)** • **[Security](SECURITY.md)**
+**[Website](https://ideaota.com)** • **[Documentation](README.md)** • **[Contributing](CONTRIBUTING.md)** • **[Security](SECURITY.md)**
 
 Made with ⚡ by [Connect Kreations](https://connectkreations.com)
 
