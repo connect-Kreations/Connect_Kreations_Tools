@@ -1207,3 +1207,60 @@ body::after {
         font-size: 0.95rem;
     }
 }
+
+
+/* Footer Simple - For Tool Pages */
+.footer-simple {
+    padding: 2rem 0;
+}
+
+.footer-links-simple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem 0;
+}
+
+.footer-links-simple a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0.5rem 1rem;
+}
+
+.footer-links-simple a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    transition: width 0.3s ease;
+}
+
+.footer-links-simple a:hover {
+    color: var(--primary);
+}
+
+.footer-links-simple a:hover::after {
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+    .footer-links-simple {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .footer-links-simple a {
+        padding: 0.75rem 1.5rem;
+    }
+}
