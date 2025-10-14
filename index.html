@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideaota Tools - Professional Toolkit for Creators</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-animated">
+                    <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+                            </linearGradient>
+                            <filter id="glow">
+                                <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <!-- Outer rotating ring -->
+                        <circle class="logo-ring" cx="50" cy="50" r="45" fill="none" stroke="url(#logoGradient)"
+                            stroke-width="2" opacity="0.3" />
+                        <!-- Middle rotating ring -->
+                        <circle class="logo-ring-2" cx="50" cy="50" r="35" fill="none" stroke="url(#logoGradient)"
+                            stroke-width="2" opacity="0.5" />
+                        <!-- Lightning bolt -->
+                        <path class="logo-bolt" d="M 50 20 L 40 50 L 50 50 L 45 80 L 65 45 L 55 45 L 60 20 Z"
+                            fill="url(#logoGradient)" filter="url(#glow)" />
+                        <!-- Center dot -->
+                        <circle class="logo-dot" cx="50" cy="50" r="5" fill="url(#logoGradient)" filter="url(#glow)" />
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <h1>Ideaota Tools</h1>
+                    <p class="tagline">Professional Toolkit for Creators</p>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="#tools" class="nav-link">
+                    <span class="nav-icon">🛠️</span>
+                    <span>Tools</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <span class="nav-icon">ℹ️</span>
+                    <span>About</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-badge">✨ Powered by Connect Kreations</div>
+                <h2 class="hero-title">Professional Tools for Everyday Tasks</h2>
+                <p class="hero-subtitle">Fast, secure, and completely free. All processing happens in your browser.</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">14+</div>
+                        <div class="stat-label">Tools</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Private</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">0$</div>
+                        <div class="stat-label">Cost</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tools" class="tools-section">
+            <div class="container">
+                <h2 class="section-title">Available Tools</h2>
+
+                <div class="search-container">
+                    <div class="search-box">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" id="toolSearch" placeholder="Search tools..." class="search-input">
+                        <span id="searchClear" class="search-clear" style="display: none;">✕</span>
+                    </div>
+                    <div id="searchResults" class="search-results"></div>
+                </div>
+
+                <div class="tools-grid">
+                    <a href="tools/pdf-converter/index.html" class="tool-card">
+                        <div class="tool-icon">📄</div>
+                        <h3>PDF Converter</h3>
+                        <p>Convert files to PDF format instantly</p>
+                    </a>
+
+                    <a href="tools/image-converter/index.html" class="tool-card">
+                        <div class="tool-icon">🖼️</div>
+                        <h3>Image Converter</h3>
+                        <p>Convert images to JPEG, PNG, WebP & more</p>
+                    </a>
+
+                    <a href="tools/image-compressor/index.html" class="tool-card">
+                        <div class="tool-icon">🗜️</div>
+                        <h3>Image Compressor</h3>
+                        <p>Reduce image size without losing quality</p>
+                    </a>
+
+                    <a href="tools/pdf-to-word/index.html" class="tool-card">
+                        <div class="tool-icon">📝</div>
+                        <h3>PDF to Word</h3>
+                        <p>Convert PDF documents to editable Word files</p>
+                    </a>
+
+                    <a href="tools/word-counter/index.html" class="tool-card">
+                        <div class="tool-icon">🔢</div>
+                        <h3>Word Counter</h3>
+                        <p>Count words, characters, sentences & more</p>
+                    </a>
+
+                    <a href="tools/image-resizer/index.html" class="tool-card">
+                        <div class="tool-icon">📐</div>
+                        <h3>Image Resizer</h3>
+                        <p>Resize images to any dimension</p>
+                    </a>
+
+                    <a href="tools/background-remover/index.html" class="tool-card">
+                        <div class="tool-icon">✂️</div>
+                        <h3>Background Remover</h3>
+                        <p>Remove image backgrounds instantly</p>
+                    </a>
+
+                    <a href="tools/youtube-tag-generator/index.html" class="tool-card">
+                        <div class="tool-icon">🎬</div>
+                        <h3>YouTube Tag Generator</h3>
+                        <p>Generate SEO-optimized YouTube tags</p>
+                    </a>
+
+                    <a href="tools/instagram-hashtag-generator/index.html" class="tool-card">
+                        <div class="tool-icon">📸</div>
+                        <h3>Instagram Hashtag Generator</h3>
+                        <p>Create trending Instagram hashtags</p>
+                    </a>
+
+                    <a href="tools/html-to-image/index.html" class="tool-card">
+                        <div class="tool-icon">🖼️</div>
+                        <h3>HTML to Image/PDF</h3>
+                        <p>Convert HTML code to images or PDF</p>
+                    </a>
+
+                    <a href="tools/watermark-tool/index.html" class="tool-card">
+                        <div class="tool-icon">©️</div>
+                        <h3>Watermark Tool</h3>
+                        <p>Add watermarks to images & PDFs</p>
+                    </a>
+
+                    <a href="tools/qr-code-generator/index.html" class="tool-card">
+                        <div class="tool-icon">📱</div>
+                        <h3>QR Code Generator</h3>
+                        <p>Create custom QR codes instantly</p>
+                    </a>
+
+                    <a href="tools/password-generator/index.html" class="tool-card">
+                        <div class="tool-icon">🔐</div>
+                        <h3>Password Generator</h3>
+                        <p>Generate secure random passwords</p>
+                    </a>
+
+                    <a href="tools/json-formatter/index.html" class="tool-card">
+                        <div class="tool-icon">{ }</div>
+                        <h3>JSON Formatter</h3>
+                        <p>Format, validate & beautify JSON</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Ideaota Tools</h2>
+                <p class="about-text">Ideaota Tools provides professional-grade utilities for creators and
+                    professionals. All tools work directly in your browser with cutting-edge technology, ensuring
+                    complete privacy and security. No uploads, no tracking, just powerful tools at your fingertips.</p>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>100% Private</h3>
+                        <p>All processing happens locally in your browser</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Lightning Fast</h3>
+                        <p>Instant results with no server delays</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3>Modern Design</h3>
+                        <p>Beautiful, intuitive interface</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Fully Responsive</h3>
+                        <p>Works perfectly on all devices</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg class="footer-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M 50 20 L 40 50 L 50 50 L 45 80 L 65 45 L 55 45 L 60 20 Z"
+                                fill="url(#footerGradient)" />
+                        </svg>
+                        <h3>Ideaota Tools</h3>
+                    </div>
+                    <p>Empowering creators with professional, privacy-first tools. Built with passion for the modern
+                        web.</p>
+                    <div class="footer-websites">
+                        <a href="https://ideaota.com" target="_blank" class="website-link">
+                            <span class="link-icon">🌐</span>
+                            <span>Ideaota.com</span>
+                        </a>
+                        <a href="https://connectkreations.com" target="_blank" class="website-link">
+                            <span class="link-icon">🌐</span>
+                            <span>Connect Kreations</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Popular Tools</h4>
+                    <ul>
+                        <li><a href="tools/pdf-converter/index.html">PDF Converter</a></li>
+                        <li><a href="tools/image-compressor/index.html">Image Compressor</a></li>
+                        <li><a href="tools/background-remover/index.html">Background Remover</a></li>
+                        <li><a href="tools/watermark-tool/index.html">Watermark Tool</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://ideaota.com" target="_blank">Ideaota Website</a></li>
+                        <li><a href="https://connectkreations.com" target="_blank">Connect Kreations</a></li>
+                        <li><a href="mailto:contact@connectkreations.com">Contact Us</a></li>
+                        <li><a href="mailto:support@connectkreations.com">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-copyright">
+                        &copy; 2025 <a href="https://tools.ideaota.com" target="_blank"
+                            class="connect-link"><strong>Ideaota Tools</strong></a>. All rights reserved.
+                    </div>
+                    <div class="footer-credits">
+                        <div class="credit-item">
+                            <span class="credit-badge">Designed by</span>
+                            <a href="https://ideaota.com" target="_blank"
+                                class="connect-link"><strong>Ideaota</strong></a>
+                            <span>&</span>
+                            <strong>Techiekamal</strong>
+                        </div>
+                        <span class="separator">|</span>
+                        <div class="credit-item">
+                            <span class="credit-badge">Powered by</span>
+                            <a href="https://connectkreations.com" target="_blank" class="connect-link">Connect
+                                Kreations</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

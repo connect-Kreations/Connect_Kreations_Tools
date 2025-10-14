@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF to Word - Build Tools</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../image-compressor/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../../index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 1rem;">
+                    <div class="logo-icon">⚡</div>
+                    <h1>Ideaota Tools</h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="../../index.html" class="nav-link">← Back to Tools</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="tool-main">
+        <div class="container">
+            <div class="tool-header">
+                <div class="tool-icon-large">📝</div>
+                <h1>PDF to Word</h1>
+                <p>Extract text from PDF documents</p>
+            </div>
+
+            <div class="tool-content">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">📁</div>
+                    <h3>Drop PDF here or click to upload</h3>
+                    <p>Supports: PDF files</p>
+                    <input type="file" id="fileInput" accept=".pdf" hidden>
+                </div>
+
+                <div id="fileInfo" style="display: none; margin: 2rem 0; padding: 1.5rem; background: var(--surface); border-radius: 0.5rem;">
+                    <h3 style="margin-bottom: 0.5rem;">File Information</h3>
+                    <p id="fileName" style="color: var(--text-secondary);"></p>
+                </div>
+
+                <button id="convertBtn" class="btn btn-primary" style="display: none;">Extract Text</button>
+                
+                <div id="output" style="display: none; margin-top: 2rem;">
+                    <h3 style="margin-bottom: 1rem;">Extracted Text:</h3>
+                    <textarea id="extractedText" readonly style="width: 100%; min-height: 300px; padding: 1.5rem; background: var(--surface); border: 1px solid var(--border); border-radius: 0.5rem; color: var(--text); font-size: 1rem; font-family: inherit; line-height: 1.6;"></textarea>
+                    <button id="downloadBtn" class="btn btn-primary" style="margin-top: 1rem;">Download as Text File</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple">
+                <div class="footer-links-simple">
+                    <a href="../../index.html">Home</a>
+                    <a href="../../index.html#tools">All Tools</a>
+                    <a href="../../index.html#about">About</a>
+                    <a href="https://ideaota.com" target="_blank">Ideaota</a>
+                    <a href="https://connectkreations.com" target="_blank">Connect Kreations</a>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <div class="footer-copyright">
+                            &copy; 2025 <a href="https://tools.ideaota.com" target="_blank" class="connect-link"><strong>Ideaota Tools</strong></a>. All rights reserved.
+                        </div>
+                        <div class="footer-credits">
+                            <div class="credit-item">
+                                <span class="credit-badge">Designed by</span>
+                                <a href="https://ideaota.com" target="_blank" class="connect-link"><strong>Ideaota</strong></a>
+                                <span>&</span>
+                                <strong>Techiekamal</strong>
+                            </div>
+                            <span class="separator">|</span>
+                            <div class="credit-item">
+                                <span class="credit-badge">Powered by</span>
+                                <a href="https://connectkreations.com" target="_blank" class="connect-link">Connect Kreations</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

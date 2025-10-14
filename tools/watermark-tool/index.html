@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watermark Tool - Ideaota Tools</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../image-compressor/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../../index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 1rem;">
+                    <div class="logo-icon">⚡</div>
+                    <h1>Ideaota Tools</h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="../../index.html" class="nav-link">← Back to Tools</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="tool-main">
+        <div class="container">
+            <div class="tool-header">
+                <div class="tool-icon-large">©️</div>
+                <h1>Watermark Tool</h1>
+                <p>Add text or image watermarks to your images</p>
+            </div>
+
+            <div class="tool-content">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">📁</div>
+                    <h3>Drop images here or click to upload</h3>
+                    <p>Supports: JPG, PNG, WebP</p>
+                    <input type="file" id="fileInput" accept="image/*" multiple hidden>
+                </div>
+
+                <div class="watermark-controls" style="display: none; margin: 2rem 0; padding: 2rem; background: rgba(21, 27, 46, 0.6); border-radius: 1rem; backdrop-filter: blur(10px);">
+                    <h3 style="margin-bottom: 1.5rem;">Watermark Settings</h3>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Watermark Text</label>
+                        <input type="text" id="watermarkText" placeholder="© Your Name" value="© Ideaota Tools" style="width: 100%; padding: 0.75rem; background: var(--surface-light); border: 1px solid var(--border); border-radius: 0.5rem; color: var(--text); font-size: 1rem;">
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div>
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Position</label>
+                            <select id="position" style="width: 100%; padding: 0.75rem; background: var(--surface-light); border: 1px solid var(--border); border-radius: 0.5rem; color: var(--text); font-size: 1rem;">
+                                <option value="bottom-right">Bottom Right</option>
+                                <option value="bottom-left">Bottom Left</option>
+                                <option value="top-right">Top Right</option>
+                                <option value="top-left">Top Left</option>
+                                <option value="center">Center</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Opacity: <span id="opacityValue">70</span>%</label>
+                            <input type="range" id="opacity" min="10" max="100" value="70" style="width: 100%;">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="imageList" class="image-list"></div>
+
+                <div class="button-group" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <button id="applyBtn" class="btn btn-primary" style="display: none; flex: 1;">Apply Watermark to All</button>
+                    <button id="downloadZipBtn" class="btn btn-secondary" style="display: none; flex: 1;">Download All as ZIP</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple">
+                <div class="footer-links-simple">
+                    <a href="../../index.html">Home</a>
+                    <a href="../../index.html#tools">All Tools</a>
+                    <a href="../../index.html#about">About</a>
+                    <a href="https://ideaota.com" target="_blank">Ideaota</a>
+                    <a href="https://connectkreations.com" target="_blank">Connect Kreations</a>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <div class="footer-copyright">
+                            &copy; 2025 <a href="https://tools.ideaota.com" target="_blank" class="connect-link"><strong>Ideaota Tools</strong></a>. All rights reserved.
+                        </div>
+                        <div class="footer-credits">
+                            <div class="credit-item">
+                                <span class="credit-badge">Designed by</span>
+                                <a href="https://ideaota.com" target="_blank" class="connect-link"><strong>Ideaota</strong></a>
+                                <span>&</span>
+                                <strong>Techiekamal</strong>
+                            </div>
+                            <span class="separator">|</span>
+                            <div class="credit-item">
+                                <span class="credit-badge">Powered by</span>
+                                <a href="https://connectkreations.com" target="_blank" class="connect-link">Connect Kreations</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

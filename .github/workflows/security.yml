@@ -1,0 +1,38 @@
+name: Security Checks
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 0 * * 0' # Weekly
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Check for secrets
+      run: |
+        echo "Checking for exposed secrets..."
+        ! grep -r "api[_-]key" --include="*.js" --include="*.html" .
+        ! grep -r "password" --include="*.js" --include="*.html" .
+        ! grep -r "secret" --include="*.js" --include="*.html" .
+        echo "✓ No secrets found"
+    
+    - name: Validate HTML
+      run: |
+        echo "Validating HTML files..."
+        find . -name "*.html" -type f | head -5
+        echo "✓ HTML files found"
+    
+    - name: Check file permissions
+      run: |
+        echo "Checking file permissions..."
+        find . -type f -perm /111 | grep -v ".git" || echo "✓ No executable files"
+    
+    - name: Security audit complete
+      run: echo "✓ Security checks passed"

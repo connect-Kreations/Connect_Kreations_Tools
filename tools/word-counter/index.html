@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter - Build Tools</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../../index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 1rem;">
+                    <div class="logo-icon">⚡</div>
+                    <h1>Ideaota Tools</h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="../../index.html" class="nav-link">← Back to Tools</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="tool-main">
+        <div class="container">
+            <div class="tool-header">
+                <div class="tool-icon-large">🔢</div>
+                <h1>Word Counter</h1>
+                <p>Count words, characters, sentences and more</p>
+            </div>
+
+            <div class="tool-content">
+                <textarea id="textInput" placeholder="Start typing or paste your text here..."></textarea>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value" id="wordCount">0</div>
+                        <div class="stat-label">Words</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="charCount">0</div>
+                        <div class="stat-label">Characters</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="charNoSpaceCount">0</div>
+                        <div class="stat-label">Characters (no spaces)</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="sentenceCount">0</div>
+                        <div class="stat-label">Sentences</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="paragraphCount">0</div>
+                        <div class="stat-label">Paragraphs</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="readingTime">0</div>
+                        <div class="stat-label">Reading Time (min)</div>
+                    </div>
+                </div>
+
+                <button id="clearBtn" class="btn btn-primary">Clear Text</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple">
+                <div class="footer-links-simple">
+                    <a href="../../index.html">Home</a>
+                    <a href="../../index.html#tools">All Tools</a>
+                    <a href="../../index.html#about">About</a>
+                    <a href="https://ideaota.com" target="_blank">Ideaota</a>
+                    <a href="https://connectkreations.com" target="_blank">Connect Kreations</a>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <div class="footer-copyright">
+                            &copy; 2025 <a href="https://tools.ideaota.com" target="_blank" class="connect-link"><strong>Ideaota Tools</strong></a>. All rights reserved.
+                        </div>
+                        <div class="footer-credits">
+                            <div class="credit-item">
+                                <span class="credit-badge">Designed by</span>
+                                <a href="https://ideaota.com" target="_blank" class="connect-link"><strong>Ideaota</strong></a>
+                                <span>&</span>
+                                <strong>Techiekamal</strong>
+                            </div>
+                            <span class="separator">|</span>
+                            <div class="credit-item">
+                                <span class="credit-badge">Powered by</span>
+                                <a href="https://connectkreations.com" target="_blank" class="connect-link">Connect Kreations</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

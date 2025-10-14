@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML to Image/PDF - Ideaota Tools</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../word-counter/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../../index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 1rem;">
+                    <div class="logo-icon">⚡</div>
+                    <h1>Ideaota Tools</h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="../../index.html" class="nav-link">← Back to Tools</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="tool-main">
+        <div class="container">
+            <div class="tool-header">
+                <div class="tool-icon-large">🖼️</div>
+                <h1>HTML to Image/PDF</h1>
+                <p>Convert HTML code to images or PDF documents</p>
+            </div>
+
+            <div class="tool-content">
+                <textarea id="htmlInput" placeholder="Paste your HTML code here..." style="width: 100%; min-height: 300px; padding: 1.5rem; background: rgba(21, 27, 46, 0.6); border: 1px solid var(--border); border-radius: 0.5rem; color: var(--text); font-size: 0.95rem; font-family: 'Courier New', monospace; line-height: 1.6; resize: vertical; margin-bottom: 1rem;"></textarea>
+
+                <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+                    <button id="previewBtn" class="btn btn-primary" style="flex: 1;">Preview</button>
+                    <button id="downloadImageBtn" class="btn btn-secondary" style="flex: 1; display: none;">Download as Image</button>
+                    <button id="downloadPdfBtn" class="btn btn-secondary" style="flex: 1; display: none;">Download as PDF</button>
+                </div>
+
+                <div id="previewArea" style="display: none;">
+                    <h3 style="margin-bottom: 1rem;">Preview:</h3>
+                    <div id="preview" style="padding: 2rem; background: white; border-radius: 0.5rem; min-height: 200px;"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple">
+                <div class="footer-links-simple">
+                    <a href="../../index.html">Home</a>
+                    <a href="../../index.html#tools">All Tools</a>
+                    <a href="../../index.html#about">About</a>
+                    <a href="https://ideaota.com" target="_blank">Ideaota</a>
+                    <a href="https://connectkreations.com" target="_blank">Connect Kreations</a>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <div class="footer-copyright">
+                            &copy; 2025 <a href="https://tools.ideaota.com" target="_blank" class="connect-link"><strong>Ideaota Tools</strong></a>. All rights reserved.
+                        </div>
+                        <div class="footer-credits">
+                            <div class="credit-item">
+                                <span class="credit-badge">Designed by</span>
+                                <a href="https://ideaota.com" target="_blank" class="connect-link"><strong>Ideaota</strong></a>
+                                <span>&</span>
+                                <strong>Techiekamal</strong>
+                            </div>
+                            <span class="separator">|</span>
+                            <div class="credit-item">
+                                <span class="credit-badge">Powered by</span>
+                                <a href="https://connectkreations.com" target="_blank" class="connect-link">Connect Kreations</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator - Ideaota Tools</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../word-counter/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../../index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 1rem;">
+                    <div class="logo-icon">⚡</div>
+                    <h1>Ideaota Tools</h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="../../index.html" class="nav-link">← Back to Tools</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="tool-main">
+        <div class="container">
+            <div class="tool-header">
+                <div class="tool-icon-large">📱</div>
+                <h1>QR Code Generator</h1>
+                <p>Create custom QR codes for URLs, text, and more</p>
+            </div>
+
+            <div class="tool-content">
+                <textarea id="qrInput" placeholder="Enter URL, text, or any content..." style="width: 100%; min-height: 120px; padding: 1.5rem; background: rgba(21, 27, 46, 0.6); border: 1px solid var(--border); border-radius: 0.5rem; color: var(--text); font-size: 1rem; font-family: inherit; line-height: 1.6; resize: vertical; margin-bottom: 1rem;"></textarea>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;">
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Size</label>
+                        <select id="qrSize" style="width: 100%; padding: 0.75rem; background: var(--surface-light); border: 1px solid var(--border); border-radius: 0.5rem; color: var(--text); font-size: 1rem;">
+                            <option value="200">Small (200x200)</option>
+                            <option value="300" selected>Medium (300x300)</option>
+                            <option value="400">Large (400x400)</option>
+                            <option value="500">Extra Large (500x500)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Color</label>
+                        <input type="color" id="qrColor" value="#7c3aed" style="width: 100%; height: 48px; padding: 0.25rem; background: var(--surface-light); border: 1px solid var(--border); border-radius: 0.5rem; cursor: pointer;">
+                    </div>
+                </div>
+
+                <button id="generateBtn" class="btn btn-primary">Generate QR Code</button>
+
+                <div id="qrOutput" style="display: none; margin-top: 2rem; text-align: center;">
+                    <h3 style="margin-bottom: 1.5rem;">Your QR Code:</h3>
+                    <div id="qrcode" style="display: inline-block; padding: 2rem; background: white; border-radius: 1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.3);"></div>
+                    <br>
+                    <button id="downloadBtn" class="btn btn-primary" style="margin-top: 2rem;">Download QR Code</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple">
+                <div class="footer-links-simple">
+                    <a href="../../index.html">Home</a>
+                    <a href="../../index.html#tools">All Tools</a>
+                    <a href="../../index.html#about">About</a>
+                    <a href="https://ideaota.com" target="_blank">Ideaota</a>
+                    <a href="https://connectkreations.com" target="_blank">Connect Kreations</a>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <div class="footer-copyright">
+                            &copy; 2025 <a href="https://tools.ideaota.com" target="_blank" class="connect-link"><strong>Ideaota Tools</strong></a>. All rights reserved.
+                        </div>
+                        <div class="footer-credits">
+                            <div class="credit-item">
+                                <span class="credit-badge">Designed by</span>
+                                <a href="https://ideaota.com" target="_blank" class="connect-link"><strong>Ideaota</strong></a>
+                                <span>&</span>
+                                <strong>Techiekamal</strong>
+                            </div>
+                            <span class="separator">|</span>
+                            <div class="credit-item">
+                                <span class="credit-badge">Powered by</span>
+                                <a href="https://connectkreations.com" target="_blank" class="connect-link">Connect Kreations</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
