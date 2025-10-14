@@ -56,7 +56,7 @@ No installation required! Simply open `index.html` in your browser.
 1. Push this repository to GitHub
 2. Go to Settings → Pages
 3. Select main branch as source
-4. Your site will be live at `https://yourusername.github.io/repository-name`
+4. Your site will be live at `https://connect-kreations.github.io/Connect_Kreations_Tools/`
 
 ### For WordPress Integration:
 
@@ -127,10 +127,10 @@ Made with ⚡ for creators worldwide
 ### Local Development
 ```bash
 # Clone the repository
-git clone https://github.com/connectkreations/ideaota-tools.git
+git clone https://github.com/connect-Kreations/Connect_Kreations_Tools.git
 
 # Navigate to directory
-cd ideaota-tools
+cd Connect_Kreations_Tools
 
 # Open in browser
 # Simply open index.html in your browser - no build required!
@@ -140,7 +140,7 @@ cd ideaota-tools
 1. Fork this repository
 2. Go to Settings → Pages
 3. Select `main` branch as source
-4. Your site will be live at `https://yourusername.github.io/ideaota-tools`
+4. Your site will be live at `https://connect-kreations.github.io/Connect_Kreations_Tools/`
 
 ## 🤝 Contributing
 
@@ -167,7 +167,7 @@ Found a security issue? Please report it responsibly:
 
 - 🌐 Website: [ideaota.com](https://ideaota.com)
 - 📧 Email: connectkreations@gmail.com
-- 💬 Issues: [GitHub Issues](https://github.com/connectkreations/ideaota-tools/issues)
+- 💬 Issues: [GitHub Issues](https://github.com/connect-Kreations/Connect_Kreations_Tools/issues)
 
 ## 🌟 Acknowledgments
 
