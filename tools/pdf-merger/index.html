@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced PDF Merger - Ideaota Tools</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../../index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 1rem;">
+                    <div class="logo-icon">⚡</div>
+                    <h1>Ideaota Tools</h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="../../index.html" class="nav-link">← Back to Tools</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="tool-main">
+        <div class="container">
+            <div class="tool-header">
+                <div class="tool-icon-large">📄</div>
+                <h1>Advanced PDF Merger</h1>
+                <p>Merge PDFs, convert images to PDF, reorder pages with drag & drop</p>
+            </div>
+
+            <div class="tool-content">
+                <div class="upload-section">
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-icon">📁</div>
+                        <h3>Drop PDF files or images here</h3>
+                        <p>or click to browse</p>
+                        <input type="file" id="fileInput" accept=".pdf,image/*" multiple hidden>
+                    </div>
+                </div>
+
+                <div id="filesContainer" class="files-container" style="display: none;">
+                    <div class="files-header">
+                        <h3>Files to Merge (<span id="fileCount">0</span>)</h3>
+                        <button id="clearAllBtn" class="btn btn-secondary">Clear All</button>
+                    </div>
+                    <div id="filesList" class="files-list"></div>
+                </div>
+
+                <div class="merge-options" id="mergeOptions" style="display: none;">
+                    <h3>Merge Options</h3>
+                    <div class="options-grid">
+                        <label class="option-item">
+                            <input type="checkbox" id="addBookmarks" checked>
+                            <span>Add bookmarks for each file</span>
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" id="addPageNumbers">
+                            <span>Add page numbers</span>
+                        </label>
+                    </div>
+                    <button id="mergeBtn" class="btn btn-primary btn-large">Merge PDFs</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple">
+                <div class="footer-links-simple">
+                    <a href="../../index.html">Home</a>
+                    <a href="../../index.html#tools">All Tools</a>
+                    <a href="../../index.html#about">About</a>
+                    <a href="https://ideaota.com" target="_blank">Ideaota</a>
+                    <a href="https://connectkreations.com" target="_blank">Connect Kreations</a>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <div class="footer-copyright">
+                            &copy; 2025 <a href="https://ideaota.com" target="_blank" class="connect-link"><strong>Ideaota Tools</strong></a>. All rights reserved.
+                        </div>
+                        <div class="footer-credits">
+                            <div class="credit-item">
+                                <span class="credit-badge">Designed by</span>
+                                <a href="https://ideaota.com" target="_blank" class="connect-link"><strong>Ideaota</strong></a>
+                                <span>&</span>
+                                <strong>Techiekamal</strong>
+                            </div>
+                            <span class="separator">|</span>
+                            <div class="credit-item">
+                                <span class="credit-badge">Powered by</span>
+                                <a href="https://connectkreations.com" target="_blank" class="connect-link">Connect Kreations</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
